@@ -1,0 +1,96 @@
+
+.blog{
+    margin-top: 5rem;
+    &__title{
+        font-weight: 900;
+        font-size: 2.5rem;
+        color: #030000;
+    }
+    &__para{
+        color: #999999;
+        font-weight: 500;
+        font-size: 0.92rem;
+        padding-top: 1rem;
+        padding-bottom: 4.4rem;
+    }
+    &__card{
+        margin-bottom: 2rem;
+        &-img{
+            height: 280px;
+            & img{
+                // object-fit: contain;
+                height: 100%;
+                width: 100%;
+            }
+        }
+        &-title{
+            margin-top: 1rem;
+            color: black;
+            font-weight: 900;
+            padding: 0;
+            & h5{
+                font-weight: 500;
+            }
+        }
+        &-link span{
+            color: $primary;
+            margin-top: 0.9rem;
+            margin-right: 0.5rem;
+            font-weight: 800;
+        }
+        &-content{
+            line-height: 1.7rem;
+            color: #999999;
+        }
+    }
+    &__body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 22rem;
+        padding: 2rem 5rem;
+        background-image: url("/asests/images/bg_1.jpg.webp");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 0;
+        position: relative;
+        .blog__overlay{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0.8;
+            z-index: -1;
+            background-color: $primary;
+        }
+        &-title{
+            font-weight: 900;
+            line-height: 3rem;
+            font-size: 2.8rem;
+            color: #fff;
+            & span{
+                font-weight: 800;
+            }
+        }
+        &-para{
+            padding-top: 1rem;
+            color: #fff;
+            line-height: 2rem;
+        }
+        &-button{
+            padding: 0.8rem 2.2rem;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+            background-color: $success;
+            font-weight: 800;
+            color: #fff;
+            border: none;
+            transition-duration: 0.5s;
+            &:hover{
+                background-color: $success;
+                color: #030000;
+            }
+        }
+    }
+}

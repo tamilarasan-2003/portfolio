@@ -1,0 +1,120 @@
+
+
+.project{
+
+    margin-top: 7rem;
+    padding-top: 3rem;
+    &__title{
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+    &__para{
+        padding: 1rem 0px;
+        text-align: center;
+        color: #999999;
+        font-size: 0.9rem;
+    }
+
+    &__img{
+        height: 350px;
+        object-fit: cover;
+        position: relative;
+        z-index: 0;
+        & img{
+            height: 100%;
+            width: 100%;
+        }
+        .text{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            text-align: center;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            color: #fff;
+            font-weight: 900;
+            z-index: 2;
+           transition-duration: 0.2s;
+           transition-timing-function: ease-in;
+            &h4{
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+            
+             & p{
+                letter-spacing: 0.1rem;
+                font-weight: 700;
+                font-size: 0.8rem;
+             }
+             &:hover{
+                background-color: #3e64ff;
+                opacity: 0.9;
+             }
+        }
+        .overlay{
+            height: 100%;
+            width: 100%;
+            background: #3e64ff;
+            position: absolute;
+            z-index: 1;
+            opacity: 0;
+            font-weight: 800;
+        }
+       
+    }
+    &__cards{     
+        &-body >div{
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+           height: 10rem;
+           background-color: aliceblue;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+           margin-bottom: 1rem;
+
+
+           & span{
+            font-weight: 900;
+            font-size: 30px;
+            color: #3e64ff;
+           }
+           & h6{
+            padding-top: 0.8rem;
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: 500;
+           }
+        }
+    }
+}
+
+// media screen
+
+
+@media screen and (max-width:992px) {
+      .project__img .overlay{
+        opacity: 0.2;
+    }
+    .project__img .text{
+        display: flex;
+    }
+    
+}
+
+@media screen and (min-width:992px) {
+  .project__img .text{
+    height: 100%;
+    width: 100%;
+     position: absolute;
+   opacity: 0;
+    &:hover{
+        opacity: 0.8;
+    }
+  }
+
+  
+}
+ 

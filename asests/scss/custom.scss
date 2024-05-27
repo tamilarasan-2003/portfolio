@@ -1,0 +1,28 @@
+@import "../bootstrap/scss/bootstrap.scss";
+
+// base
+@import"./base/reset";
+
+
+//  layouts
+@import "./layouts/header";
+
+
+// pages
+@import "./pages/home";
+
+@import "./pages/about";
+
+
+@import "./pages/resume";
+
+
+
+@import "./pages/services";
+
+@import "./pages/projects";
+
+@import "./pages/blog";
+
+
+@import "./pages/contact";

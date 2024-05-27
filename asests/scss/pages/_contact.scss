@@ -1,0 +1,103 @@
+
+
+.contact{
+    margin-top: 3rem;
+    padding-top: 3rem;
+    text-align: center;
+
+
+    &-title{
+        font-size: 2.3rem;
+        font-weight: bolder;
+        margin-bottom: 1.6rem;
+    }
+    &-para{
+        color: #999999;
+        font-weight: 400;
+    }
+    &-card{
+        // border: 1px solid black;
+        padding: 0 0.5rem;
+        margin-top: 3rem;
+        height: 15rem;
+       & > div{
+        height: 100%;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+       }
+
+        &__badge{
+            margin-top: 1rem;
+            padding: 1.8rem;
+            font-size: 2.5rem;
+            border-radius: 50%;
+            background-color: $primary;
+            color: #fff;
+        }
+        &__title{
+            font-size: 1.2rem;
+            font-weight: 900;
+            padding-bottom: 0.5rem
+        }
+        &__address{
+            @extend .contact-card__title;
+            font-size: 1rem;
+            color: #999999;
+            padding: 0.2rem 0.5rem;
+            font-weight: 100;
+        }
+        &__link{
+            text-decoration: none;
+            cursor: pointer;
+            padding: 0.8rem 0px;
+            margin-bottom: 1rem;
+        }
+       
+    }
+    
+    &__img{
+        height: auto;
+    }
+
+    &__form{
+        height: 100%;
+        background-color: rgba(210, 228, 235, 0.481);
+    }
+
+    &__footer{
+background-color: #000;
+
+        &-title{
+            margin-top: 1rem;
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #ffffff;
+        }
+        &-para{
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 2.3rem;
+
+            & a{
+                text-decoration: none;
+                transition-duration: 0.2s;
+                margin-top: 1rem;
+                color: rgba(255, 255, 255, 0.7);
+
+                &:hover{
+                    color: #ffffff;
+                    font-weight: 900;
+                }
+            }
+        }
+        &-badge{
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 3rem;
+            font-size: 1.8rem;
+            border-radius: 50%;
+            margin-right: 0.5rem;
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+}

@@ -1,0 +1,58 @@
+
+
+
+
+.navbar-header{
+    background-color: black;
+    .nav-item>a{
+        color: #fff;
+        &:hover{
+            color: $warning;
+        }
+    }
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        &-bg{
+                background-color: $primary;
+                padding: 20px;
+                border-radius: 50%;
+        }
+        &-title{
+            font-weight: 900;
+            color: #fff;
+            position: absolute;
+            left: 1rem;
+            &:hover{
+                color: #fff;
+            }
+            &__hover{
+                @extend .navbar-header__logo-title;
+                font-weight: 900;
+                color: #ffffff;
+                left: 2rem;
+                cursor: pointer;
+                &:hover{
+                    color: $warning;
+                }
+            }
+        }
+           
+    }
+    &__menu-btn{
+        color: white;
+        box-shadow: none !important;
+        &:hover{
+            color: #fff;
+        }
+        &:focus{
+            color: #fff;
+            outline: none;
+        }
+        
+    }
+    
+   
+ }

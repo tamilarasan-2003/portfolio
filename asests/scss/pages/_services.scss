@@ -1,0 +1,43 @@
+.services{
+    margin-top: 1.5rem;
+   
+    &__title{
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+    &__para{
+        color: #999999;
+        margin-top: 1.5rem;
+        font-weight: 200;
+    }
+    &__card{
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        transition-timing-function: ease-out;
+        user-select: none;
+        cursor: pointer;
+        & div:hover{
+            transition-duration: 0.5s;
+            & p{
+                color: #000;
+                font-weight: 900;
+            }
+            background-color: #3e64ff; 
+           
+        }
+
+
+        &-title{
+            font-size: 0.8rem;
+            letter-spacing: 0.3rem;
+            padding-top: 1rem;
+            color: $primary;
+            font-weight: 900;
+        }
+        &-para{
+            padding: 0px 1.2rem;
+            font-size: 0.9rem;
+            color: #999999;
+            padding-bottom: 1.2rem;
+        }
+    }
+}
